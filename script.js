@@ -37,7 +37,7 @@ themeChanger.addEventListener("click", () => {
 const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
 const getCurrentIcon = () => themeChanger.classList.contains("sun") ? "sun" : "moon";
 
-const savedTheme = localStorage.getTheme("saved-theme");
+const savedTheme = localStorage.getItem("saved-theme");
 const savedIcon = localStorage.getItem("saved-icon");
 
 if (savedTheme) {
