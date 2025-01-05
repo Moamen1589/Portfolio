@@ -26,7 +26,7 @@ ScrollReveal({
     delay: 100
 });
 
-ScrollReveal().reveal('.home .info h2, .section-title-02, .btn', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.home .info h2, .section-title-02,.swiper-section , .btn', { delay: 500, origin: 'left' });
 ScrollReveal().reveal('.home .info h3, .home .info p, .about-info', { delay: 500, origin: 'right' });
 ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 500, origin: 'left', interval: 200 });
 ScrollReveal().reveal('.about, .text-container .description, .contact-right', { delay: 600, origin: 'right' });
