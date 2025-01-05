@@ -44,3 +44,31 @@ if (savedTheme) {
     document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
     themeChanger.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
 }
+// swiper
+const swiper = new Swiper('.swiper', {
+    loop: false,  
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 2,
+        },
+    },
+});
+
